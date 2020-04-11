@@ -1,0 +1,81 @@
+body{
+    font-family: 'Arial',sans-serif;
+    background-color: cadetblue;
+    background:linear-gradient(90deg,cadetblue,#5085A0) ;
+    margin: 20px;
+}
+#wrapper ,fieldset{
+    background-color: aliceblue;
+    max-width: 1300px;
+    min-height: 100px;
+    border-radius: 10px;
+    padding: 2%;
+    margin: 0 auto 10px;
+}
+#formwrapper{
+    display: flex;
+    flex-direction: row;
+}
+#left-column{
+    width: 60%;
+    padding: 1%;
+}
+#right-column{
+    width: 60%;
+    padding: 1%;
+}
+#right-column legend{
+    font-size: large;
+    font-weight: bold;
+}
+#right-column legend textarea{
+    text-align: center;
+}
+#right-column fieldset p{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     flex-wrap: wrap;
+}
+#left-column legend{
+    font-size: large;
+    font-weight: bold;
+}
+#left-column p{
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+}
+#left-column p input{
+    height: 20px;
+}
+#left-column p select{
+    height: 30px;
+}
+#left-column p label{
+    font-size: large;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+footer{
+    text-align: center;
+}
+footer img{
+    width: 5em;
+    height: 5em;
+}
+@media(max-width:900px){
+    #formwrapper{
+        flex-direction: column;
+    }
+    #left-column{
+        width: 100%;
+        padding: 0;
+    }
+    #right-column{
+        width: 100%;
+        padding: 0;
+    }
+
+}

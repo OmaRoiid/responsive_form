@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            <h2> Job Application </h2>
+            <form id="formwrapper">
+             <section id="left-column">
+                <fieldset>
+                  <legend>Main Info</legend>
+                  <p>
+                    <label for="firstname_id">firstname:</label>
+                  <input id="firstname_id" name="firstname" type="text" placeholder="First Name" autofocus required tabindex="1">
+                  <label for="lastname_id">lastname:</label>
+                  <input id="lastname_id" name="lastname" type="text" placeholder="Last Name"  required tabindex="2">
+                  <label for="email_id">Emalil:</label>
+                  <input id="email_id" name="email" type="email" placeholder="Email@somewhare.com"  required tabindex="3">
+                  <label for="url_id">Url:</label>
+                  <input id="url_id" name="url" type="url" placeholder="linkedin,github..etc"  required tabindex="4">
+                </p>
+                <p>
+                    <label for="username_id">Username:</label>
+                    <input id="username_id" name="username" type="text" placeholder="Username">
+                    <label for="password_id">Password:</label>
+                    <input id="password_id" name="password" type="password" placeholder="Password">
+
+                </p>
+              </fieldset>
+              <fieldset>
+                <legend>Address</legend>
+                <p>
+                    <label for="address_one_id">Address one:</label>
+                  <input id="address_one_id" name="address_one" type="text" placeholder="Address one" autofocus required tabindex="1">
+                  <label for="address_two_id">Address Two:</label>
+                  <input id="address_two_id" name="address_two" type="text" placeholder="Address Two"   tabindex="2">
+                  <label for="city_id">City:</label>
+                  <select>
+                    <optgroup label="EGYPT">
+                        <option>Cairo</option>
+                        <option>Giza</option>
+                        <option>Alex</option>
+                    </optgroup>
+                </select>
+                  <label for="zip_id">Zip:</label>
+                  <input id="zip_id" name="zip" type="number" placeholder="Zip code"  required tabindex="4">
+            </p>
+        
+              </fieldset>
+             </section>
+             <section id="right-column">
+                <fieldset>
+                    <legend>Job Role</legend>
+                    <p>
+                    <span > <input type="radio" name="color" value="frontend" checked>Front-end</span>
+                    <span > <input type="radio" name="color" value="backend">Back-end</span>
+                    <span > <input type="radio" name="color" value="ui">UI/UX</span>
+                    <span > <input type="radio" name="color" value="web">Web Designer</span>
+                    <span > <input type="radio" name="color" value="mobile">Mobile Developer </span>
+                </p>
+                <p>
+                    <span > <input type="checkbox" name="desc" value="full">Full-time</span>
+                    <span > <input type="checkbox" name="desc" value="part">Part-time</span>
+                    <span > <input type="checkbox" name="desc" value="remotely">Remotely</span>
+                    <span > <input type="checkbox" name="desc" value="pear">Intern</span>
+                </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Cover Latter</legend>
+                    <textarea rows="4" cols="75" style=" height: 150px;" placeholder="Tell us about yourself"></textarea>
+                   <p> 
+                       <input type="submit" value="Submit" > 
+                    </p>
+                </fieldset>
+            </section>
+            </form>
+        </div>
+        <footer><img src="img/logo.png" alt="Form Logo"></footer>
+    </body>
+</html>
